@@ -1,0 +1,19 @@
+module fabric {
+  yang-version 1.1;
+  namespace "urn:offline:fabric";
+  prefix f;
+  container fabric {
+    leaf enabled { type boolean; default "true"; }
+    leaf max_rate { type uint16; default "100"; }
+    list port {
+      key "name";
+      leaf name { type string; }
+      leaf peer { type leafref { path "../../port/name"; } }
+      leaf rate {
+        when "../../enabled = 'true'";
+        type uint16;
+        default "10";
+      }
+    }
+  }
+}
