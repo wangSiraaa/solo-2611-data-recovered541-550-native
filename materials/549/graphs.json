@@ -1,0 +1,90 @@
+{
+  "normal": [
+    [
+      "ex:a",
+      "rdf:type",
+      "ex:Sensor"
+    ],
+    [
+      "ex:Sensor",
+      "rdfs:subClassOf",
+      "ex:Meter"
+    ],
+    [
+      "ex:a",
+      "ex:serial",
+      {
+        "lexical": "S1",
+        "datatype": "xsd:string"
+      }
+    ]
+  ],
+  "chain": [
+    [
+      "ex:a",
+      "rdf:type",
+      "ex:Sensor"
+    ],
+    [
+      "ex:Sensor",
+      "rdfs:subClassOf",
+      "ex:Meter"
+    ],
+    [
+      "ex:Meter",
+      "rdfs:subClassOf",
+      "ex:Asset"
+    ]
+  ],
+  "diamond": [
+    [
+      "ex:a",
+      "rdf:type",
+      "ex:Meter"
+    ],
+    [
+      "ex:a",
+      "ex:p",
+      "ex:b1"
+    ],
+    [
+      "ex:a",
+      "ex:p",
+      "ex:b2"
+    ],
+    [
+      "ex:b1",
+      "ex:q",
+      "ex:c"
+    ],
+    [
+      "ex:b2",
+      "ex:q",
+      "ex:c"
+    ]
+  ],
+  "before": [
+    [
+      "ex:a",
+      "rdf:type",
+      "ex:Sensor"
+    ],
+    [
+      "ex:Sensor",
+      "rdfs:subClassOf",
+      "ex:Asset"
+    ]
+  ],
+  "after": [
+    [
+      "ex:a",
+      "rdf:type",
+      "ex:Sensor"
+    ],
+    [
+      "ex:Sensor",
+      "rdfs:subClassOf",
+      "ex:Meter"
+    ]
+  ]
+}
