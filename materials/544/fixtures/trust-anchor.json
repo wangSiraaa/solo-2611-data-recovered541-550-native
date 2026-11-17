@@ -1,0 +1,4 @@
+{
+  "kind": "public_rsa_test_anchor",
+  "public_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoCKkKI0y3+bea5I8LrU7\ngZt1wmr7KDHDDWqldifH3jtouqPFZFlYjxlmfgYl4baRwUHYit6PoJob8MQP8j3d\nzWJysGUaSQbL39/mS97KfHmTbyJGvvpi9zIfmqoXCtUDgjl3paVVPQ2myAhj43UD\nVOdMbJiB2zumwBrZwJatQDFsPR4kjRpfdxRGDG/AauLcqrJUKZJVlp/3hicYmYln\n87fEeQx5dRmGe24s30INVTCP40nlXMbdji9zthunIytbWIq6SdxSm8cHaXvoidyF\n6QIdJE23WHhHXW4kkZC7uEp9ZMNGZIFuYyQ7Hd1Z2PhEGi1tcPYrcYsC8a7pJp7U\npwIDAQAB\n-----END PUBLIC KEY-----\n"
+}
