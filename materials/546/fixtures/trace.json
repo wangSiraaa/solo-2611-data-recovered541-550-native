@@ -1,0 +1,21 @@
+{
+  "single": [
+    "single.rtp"
+  ],
+  "fu_wrap": [
+    "end.rtp",
+    "start.rtp"
+  ],
+  "reports": [
+    "first.rtcp",
+    "last.rtcp"
+  ],
+  "first_sequence": {
+    "single": {
+      "1": 1
+    },
+    "fu_wrap": {
+      "1": 65535
+    }
+  }
+}
