@@ -1,0 +1,27 @@
+{
+  "bases": [],
+  "deltas": [
+    {
+      "kind": "delete",
+      "max_write_id": 18,
+      "min_write_id": 2,
+      "path": "inventory/f002_s002_delete.jsonl",
+      "statement_id": 2
+    },
+    {
+      "kind": "insert",
+      "max_write_id": 19,
+      "min_write_id": 13,
+      "path": "inventory/f003_s003_insert.jsonl",
+      "statement_id": 3
+    },
+    {
+      "kind": "insert",
+      "max_write_id": 12,
+      "min_write_id": 1,
+      "path": "inventory/f001_s001_insert.jsonl",
+      "statement_id": 1
+    }
+  ],
+  "table": "inventory"
+}

@@ -1,0 +1,40 @@
+{
+  "base_used": {
+    "base_write_id": 28,
+    "path": "bases/measurements_b2.jsonl"
+  },
+  "delta_operations_applied": 0,
+  "output": "/workspace/materials/550/artifacts/results/measurements_rows.jsonl",
+  "row_count": 195,
+  "snapshot": {
+    "aborted_write_ids": [
+      3,
+      12,
+      13,
+      15,
+      16,
+      22,
+      24,
+      25,
+      27
+    ],
+    "format": "txn-snapshot/v1",
+    "high_write_id": 28,
+    "invalid_write_ids": [
+      3,
+      12,
+      13,
+      15,
+      16,
+      22,
+      24,
+      25,
+      27
+    ],
+    "open_write_ids": [],
+    "table": "measurements",
+    "txn_high_watermark": 100
+  },
+  "status": "complete",
+  "table": "measurements"
+}

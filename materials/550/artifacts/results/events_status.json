@@ -1,0 +1,26 @@
+{
+  "base_used": {
+    "base_write_id": 11,
+    "path": "bases/events_mid.jsonl"
+  },
+  "delta_operations_applied": 166,
+  "output": "/workspace/materials/550/artifacts/results/events_rows.jsonl",
+  "row_count": 201,
+  "snapshot": {
+    "aborted_write_ids": [
+      12,
+      16
+    ],
+    "format": "txn-snapshot/v1",
+    "high_write_id": 23,
+    "invalid_write_ids": [
+      12,
+      16
+    ],
+    "open_write_ids": [],
+    "table": "events",
+    "txn_high_watermark": 100
+  },
+  "status": "complete",
+  "table": "events"
+}

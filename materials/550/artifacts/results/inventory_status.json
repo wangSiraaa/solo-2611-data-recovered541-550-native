@@ -1,0 +1,28 @@
+{
+  "base_used": {
+    "base_write_id": 12,
+    "path": "bases/inventory_mid.jsonl"
+  },
+  "delta_operations_applied": 128,
+  "output": "/workspace/materials/550/artifacts/results/inventory_rows.jsonl",
+  "row_count": 224,
+  "snapshot": {
+    "aborted_write_ids": [
+      7,
+      8,
+      9
+    ],
+    "format": "txn-snapshot/v1",
+    "high_write_id": 19,
+    "invalid_write_ids": [
+      7,
+      8,
+      9
+    ],
+    "open_write_ids": [],
+    "table": "inventory",
+    "txn_high_watermark": 100
+  },
+  "status": "complete",
+  "table": "inventory"
+}

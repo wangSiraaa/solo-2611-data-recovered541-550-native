@@ -1,0 +1,27 @@
+{
+  "bases": [],
+  "deltas": [
+    {
+      "kind": "insert",
+      "max_write_id": 23,
+      "min_write_id": 17,
+      "path": "events/f003_s003_insert.jsonl",
+      "statement_id": 3
+    },
+    {
+      "kind": "delete",
+      "max_write_id": 23,
+      "min_write_id": 2,
+      "path": "events/f002_s002_delete.jsonl",
+      "statement_id": 2
+    },
+    {
+      "kind": "insert",
+      "max_write_id": 16,
+      "min_write_id": 1,
+      "path": "events/f001_s001_insert.jsonl",
+      "statement_id": 1
+    }
+  ],
+  "table": "events"
+}

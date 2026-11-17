@@ -1,0 +1,16 @@
+{
+  "aborted_write_ids": [
+    3
+  ],
+  "format": "txn-snapshot/v1",
+  "high_write_id": 11,
+  "invalid_write_ids": [
+    3,
+    11
+  ],
+  "open_write_ids": [
+    11
+  ],
+  "table": "measurements",
+  "txn_high_watermark": 30
+}

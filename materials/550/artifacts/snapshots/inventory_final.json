@@ -1,0 +1,17 @@
+{
+  "aborted_write_ids": [
+    7,
+    8,
+    9
+  ],
+  "format": "txn-snapshot/v1",
+  "high_write_id": 19,
+  "invalid_write_ids": [
+    7,
+    8,
+    9
+  ],
+  "open_write_ids": [],
+  "table": "inventory",
+  "txn_high_watermark": 100
+}

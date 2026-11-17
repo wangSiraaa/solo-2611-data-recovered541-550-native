@@ -1,0 +1,30 @@
+{
+  "base_used": {
+    "base_write_id": 10,
+    "path": "bases/alerts_mid.jsonl"
+  },
+  "delta_operations_applied": 117,
+  "output": "/workspace/materials/550/artifacts/results/alerts_rows.jsonl",
+  "row_count": 230,
+  "snapshot": {
+    "aborted_write_ids": [
+      11,
+      13,
+      17,
+      18
+    ],
+    "format": "txn-snapshot/v1",
+    "high_write_id": 22,
+    "invalid_write_ids": [
+      11,
+      13,
+      17,
+      18
+    ],
+    "open_write_ids": [],
+    "table": "alerts",
+    "txn_high_watermark": 100
+  },
+  "status": "complete",
+  "table": "alerts"
+}

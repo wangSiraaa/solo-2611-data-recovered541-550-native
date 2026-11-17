@@ -1,0 +1,2 @@
+# The delivered directory product is a real, reopenable SQLite file.
+!artifacts/txn_directory.sqlite

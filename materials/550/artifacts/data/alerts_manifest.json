@@ -1,0 +1,32 @@
+{
+  "bases": [
+    {
+      "base_write_id": 10,
+      "path": "bases/alerts_mid.jsonl"
+    }
+  ],
+  "deltas": [
+    {
+      "kind": "insert",
+      "max_write_id": 12,
+      "min_write_id": 1,
+      "path": "alerts/f001_s001_insert.jsonl",
+      "statement_id": 1
+    },
+    {
+      "kind": "delete",
+      "max_write_id": 22,
+      "min_write_id": 2,
+      "path": "alerts/f002_s002_delete.jsonl",
+      "statement_id": 2
+    },
+    {
+      "kind": "insert",
+      "max_write_id": 22,
+      "min_write_id": 13,
+      "path": "alerts/f003_s003_insert.jsonl",
+      "statement_id": 3
+    }
+  ],
+  "table": "alerts"
+}

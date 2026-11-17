@@ -1,0 +1,114 @@
+[PASS] begin starts at 1
+[PASS] txn ids are not booleans/strings
+[PASS] per-table counters independent 1,1,2
+[PASS] txn id differs from table write id after interleaving
+[PASS] allocate retry is idempotent per table
+[PASS] retry on a third table gets its own counter
+[PASS] allocate after finish rejected
+[PASS] allocate unknown txn rejected
+[PASS] finish rejects invalid state 'maybe'
+[PASS] finish rejects invalid state ''
+[PASS] finish rejects invalid state None
+[PASS] finish rejects invalid state 1
+[PASS] identical finish retry idempotent
+[PASS] terminal reversal rejected
+[PASS] finish unknown txn rejected
+[PASS] table '' rejected
+[PASS] table 1 rejected
+[PASS] table None rejected
+[PASS] table True rejected
+[PASS] txn True rejected
+[PASS] txn False rejected
+[PASS] txn '1' rejected
+[PASS] txn 1.0 rejected
+[PASS] snapshot lists table write id as open, not txn id {"format": "txn-snapshot/v1", "table": "measurements", "txn_high_watermark": 7, "high_write_id": 3, "open_write_ids": [3], "aborted_write_ids": [2], "invalid_write_ids": [2, 3]}
+[PASS] empty table has zero watermarks
+[PASS] old snapshot does not drift after commit
+[PASS] persisted txn high watermark survives reopen
+[PASS] persisted write counter survives reopen
+[PASS] status reports all terminal states
+[PASS] generated run has 100 transactions
+[PASS] measurements: write ids dense from 1, no reuse
+[PASS] measurements: one write id per (txn,table) and txn ids differ in general
+[PASS] measurements: global txn ids are not the table write ids
+[PASS] events: write ids dense from 1, no reuse
+[PASS] events: one write id per (txn,table) and txn ids differ in general
+[PASS] inventory: write ids dense from 1, no reuse
+[PASS] inventory: one write id per (txn,table) and txn ids differ in general
+[PASS] alerts: write ids dense from 1, no reuse
+[PASS] alerts: one write id per (txn,table) and txn ids differ in general
+[PASS] measurements: valid write ids derived independently
+[PASS] measurements: complete status
+[PASS] measurements: full replay RIDs/values match independent expectation reader=195 expected=195
+[PASS] measurements: output sorted by full RID
+[PASS] measurements: provenance + snapshot retained on every row
+[PASS] measurements: base+tail equals full replay
+[PASS] measurements: replay reads strictly more delta operations
+[PASS] measurements: reversed manifest order yields identical rows
+[PASS] measurements: external snapshot JSON accepted
+[PASS] measurements: export marked complete
+[PASS] measurements: exported JSONL equals scan rows
+[PASS] events: valid write ids derived independently
+[PASS] events: complete status
+[PASS] events: full replay RIDs/values match independent expectation reader=201 expected=201
+[PASS] events: output sorted by full RID
+[PASS] events: provenance + snapshot retained on every row
+[PASS] events: base+tail equals full replay
+[PASS] events: replay reads strictly more delta operations
+[PASS] events: reversed manifest order yields identical rows
+[PASS] events: external snapshot JSON accepted
+[PASS] events: export marked complete
+[PASS] events: exported JSONL equals scan rows
+[PASS] inventory: valid write ids derived independently
+[PASS] inventory: complete status
+[PASS] inventory: full replay RIDs/values match independent expectation reader=224 expected=224
+[PASS] inventory: output sorted by full RID
+[PASS] inventory: provenance + snapshot retained on every row
+[PASS] inventory: base+tail equals full replay
+[PASS] inventory: replay reads strictly more delta operations
+[PASS] inventory: reversed manifest order yields identical rows
+[PASS] inventory: external snapshot JSON accepted
+[PASS] inventory: export marked complete
+[PASS] inventory: exported JSONL equals scan rows
+[PASS] alerts: valid write ids derived independently
+[PASS] alerts: complete status
+[PASS] alerts: full replay RIDs/values match independent expectation reader=230 expected=230
+[PASS] alerts: output sorted by full RID
+[PASS] alerts: provenance + snapshot retained on every row
+[PASS] alerts: base+tail equals full replay
+[PASS] alerts: replay reads strictly more delta operations
+[PASS] alerts: reversed manifest order yields identical rows
+[PASS] alerts: external snapshot JSON accepted
+[PASS] alerts: export marked complete
+[PASS] alerts: exported JSONL equals scan rows
+[PASS] explain_rid finds a live RID
+[PASS] explain_rid reports an absent RID
+[PASS] two rows with same row_id but different original_write_id coexist row_id=0
+[PASS] targeted deletes are absent while other rows survive
+[PASS] aborted delete leaves its target RID live live contains (1,7,1)? True
+[PASS] S1 still marks the write open after later commit
+[PASS] S1 uses the eligible B1 base, not B2 embedding the open write
+[PASS] S1 base+tail equals independent S1 replay
+[PASS] S1 full replay equals base+tail
+[PASS] S1 with only an ineligible base falls back to full replay
+[PASS] persisted S1 JSON did not drift
+[PASS] snapshot missing required list
+[PASS] snapshot wrong format
+[PASS] negative high watermark
+[PASS] boolean write id rejected
+[PASS] negative exception id rejected
+[PASS] duplicate exception id rejected
+[PASS] out-of-range exception rejected
+[PASS] open/aborted overlap rejected
+[PASS] invalid != open union aborted rejected
+[PASS] snapshot/manifest table identity mismatch
+[PASS] manifest table mismatch
+[PASS] path traversal rejected
+[PASS] oversized declared range accepted (rows inside it are simply filtered)
+[PASS] row outside declared range rejected
+[PASS] illegal delta kind rejected
+[PASS] duplicate manifest path rejected
+[PASS] delete of non-existent visible RID fails the read
+[PASS] duplicate operation identity fails the read
+[PASS] bucket_id outside 0..15 fails the read
+[PASS] failed read writes failed status and no complete dataset

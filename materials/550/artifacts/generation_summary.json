@@ -1,0 +1,33 @@
+{
+  "b2_boundary": 28,
+  "db": "artifacts/txn_directory.sqlite",
+  "final_live_rows_per_table": {
+    "alerts": 230,
+    "events": 201,
+    "inventory": 224,
+    "measurements": 195
+  },
+  "jsonl_files": 19,
+  "physical_ops_per_table": {
+    "alerts": 362,
+    "events": 348,
+    "inventory": 332,
+    "measurements": 360
+  },
+  "s1": {
+    "b1_boundary": 10,
+    "open_txn": {
+      "table": "measurements",
+      "txn_id": 30,
+      "write_id": 11
+    },
+    "s1_high_watermark": 11
+  },
+  "tables": [
+    "measurements",
+    "events",
+    "inventory",
+    "alerts"
+  ],
+  "txn_count": 100
+}
