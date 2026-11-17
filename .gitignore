@@ -3,3 +3,8 @@ __pycache__/
 *.db
 *.sqlite
 *.sqlite3
+
+# Deliverable persistent sample files are intentionally tracked.
+!materials/547/artifacts/*.sqlite
+!materials/547/artifacts/*.sqlite-wal
+!materials/547/artifacts/*.sqlite-shm
